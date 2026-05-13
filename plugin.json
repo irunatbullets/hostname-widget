@@ -1,7 +1,7 @@
 {
-    "id": "hostnameWidget",
-    "name": "Hostname Widget",
-    "description": "Hostname Widget",
+    "id": "dmsHostnameWidget",
+    "name": "DMS Hostname Widget",
+    "description": "A DMS bar widget for displaying your machine hostname",
     "category": "utilities",
     "version": "1.0.0",
     "author": "irunatbullets",
@@ -11,7 +11,7 @@
     "capabilities": [
         "dankbar-widget"
     ],
-    "repo": "",
+    "repo": "https://github.com/irunatbullets/dms-hostname-widget",
     "compositors": [
         "any"
     ],
