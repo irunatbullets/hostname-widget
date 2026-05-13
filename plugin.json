@@ -1,0 +1,31 @@
+{
+    "id": "hostnameWidget",
+    "name": "Hostname Widget",
+    "description": "Hostname Widget",
+    "category": "utilities",
+    "version": "1.0.0",
+    "author": "irunatbullets",
+    "icon": "",
+    "type": "widget",
+    "component": "./HostnameWidget.qml",
+    "capabilities": [
+        "dankbar-widget"
+    ],
+    "repo": "",
+    "compositors": [
+        "any"
+    ],
+    "distro": [
+        "any"
+    ],
+    "dependencies": [
+        "dms"
+    ],
+    "screenshot": "",
+    "permissions": [
+        "process",
+        "settings_read",
+        "settings_write"
+    ]
+}
+
