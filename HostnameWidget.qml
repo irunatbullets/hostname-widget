@@ -28,7 +28,7 @@ PluginComponent {
 
             DankIcon {
                 name: "monitor"
-                size: Theme.iconSize - 6
+                size: Theme.iconSizeSmall
                 color: Theme.surfaceText
                 anchors.verticalCenter: parent.verticalCenter
             }
@@ -48,17 +48,25 @@ PluginComponent {
 
             DankIcon {
                 name: "monitor"
-                size: Theme.iconSize
+                size: Theme.iconSizeSmall
                 color: Theme.surfaceText
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
-            StyledText {
-                text: root.displayText
-                font.pixelSize: Theme.fontSizeSmall
-                color: Theme.surfaceText
-                anchors.horizontalCenter: parent.horizontalCenter
+            Item {
+                implicitWidth: rotatedText.height + Theme.spacingS
+                implicitHeight: rotatedText.width + Theme.spacingS
+                StyledText {
+                    id: rotatedText
+                    text: root.displayText
+                    font.pixelSize: Theme.fontSizeSmall
+                    color: Theme.surfaceText
+                    rotation: 90
+                    transformOrigin: Item.Center
+                    anchors.centerIn: parent
+                }
             }
+
         }
     }
 }
