@@ -2,16 +2,11 @@
     "id": "hostnameWidget",
     "name": "Hostname Widget",
     "description": "A widget for displaying your hostname",
-    "category": "utilities",
     "version": "1.0.0",
     "author": "irunatbullets",
     "type": "widget",
-    "component": "./HostnameWidget.qml",
     "capabilities": ["dankbar-widget"],
-    "repo": "https://github.com/irunatbullets/hostname-widget",
-    "compositors": ["any"],
-    "distro": ["any"],
-    "dependencies": ["dms"],
+    "component": "./HostnameWidget.qml",
     "permissions": ["process"]
 }
 
