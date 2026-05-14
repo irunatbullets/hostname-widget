@@ -5,24 +5,13 @@
     "category": "utilities",
     "version": "1.0.0",
     "author": "irunatbullets",
-    "icon": "",
     "type": "widget",
     "component": "./HostnameWidget.qml",
-    "capabilities": [
-        "dankbar-widget"
-    ],
+    "capabilities": ["dankbar-widget"],
     "repo": "https://github.com/irunatbullets/hostname-widget",
-    "compositors": [
-        "any"
-    ],
-    "distro": [
-        "any"
-    ],
-    "dependencies": [
-        "dms"
-    ],
-    "permissions": [
-        "process"
-    ]
+    "compositors": ["any"],
+    "distro": ["any"],
+    "dependencies": ["dms"],
+    "permissions": ["process"]
 }
 
