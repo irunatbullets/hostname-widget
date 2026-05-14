@@ -21,11 +21,8 @@
     "dependencies": [
         "dms"
     ],
-    "screenshot": "",
     "permissions": [
-        "process",
-        "settings_read",
-        "settings_write"
+        "process"
     ]
 }
 
