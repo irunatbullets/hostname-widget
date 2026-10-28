@@ -1,26 +1,14 @@
+
 import QtQuick
 import qs.Common
 import qs.Services
 import qs.Widgets
 import qs.Modules.Plugins
-import Quickshell.Io
 
 PluginComponent {
     id: root
 
-    property string displayText: "loading..."
-
-    Process {
-        id: hostnameProcess
-        command: ["hostname"]
-        running: true
-
-        stdout: StdioCollector {
-            onStreamFinished: {
-                root.displayText = this.text.trim()
-            }
-        }
-    }
+    property string displayText: UserInfoService.hostname
 
     horizontalBarPill: Component {
         Row {
@@ -56,6 +44,7 @@ PluginComponent {
             Item {
                 implicitWidth: rotatedText.height + Theme.spacingS
                 implicitHeight: rotatedText.width + Theme.spacingS
+
                 StyledText {
                     id: rotatedText
                     text: root.displayText
@@ -66,7 +55,6 @@ PluginComponent {
                     anchors.centerIn: parent
                 }
             }
-
         }
     }
 }
